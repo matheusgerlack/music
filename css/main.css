@@ -311,5 +311,7 @@ body{
 	height: 50px;
 	font-size: 30px;
 	}
-
+   td{
+	font-size: 25px;
+	}
 }
