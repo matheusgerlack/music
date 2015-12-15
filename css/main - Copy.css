@@ -1,0 +1,187 @@
+@font-face {
+    font-family: ocean;
+    src: url("../fonts/ocean-coastlines.otf");
+}
+
+
+html{
+	width: 100%;
+	height: 100%;
+	background-color: #222;
+		background: repeating-linear-gradient(
+	  -45deg,
+	  #eee,
+	  #eee 10px,
+	  white 1px, 
+	  white 11px
+	);
+/*#222 lugar de #eee/#333 instead of orange*/
+}
+
+/*logo section*/
+
+.logo h1{
+	padding-top: -10px;
+	padding-bottom:90px; 
+	font-family: ocean;
+	font-size: 170px;
+	color: #29aac3;
+	/*text-shadow: 2px 2px 2px grey;*/
+}
+
+.logo p{
+	font-family: ocean;
+	font-size: 70px;
+	position: absolute;
+	top: 140px;
+	left: 41%;
+	color: #eee;
+}
+
+/*icons*/
+
+.icon-wave-sea{
+	top: 220px;
+	position: absolute;
+	left: 50%;
+	color: #29aac3;
+
+}
+
+
+.panel-title i{
+	font-size: 40px;
+}
+
+.logo{
+	border-bottom: 5px solid #eee;
+	padding-bottom: 35px;
+	margin-bottom: -40px; 
+	  background: -webkit-linear-gradient(left top, #222 ,  #8308f1 ); /* For Safari 5.1 to 6.0 */
+	  background: -o-linear-gradient(bottom right, #222 ,  #8308f1 ); /* For Opera 11.1 to 12.0 */
+	  background: -moz-linear-gradient(bottom right, #222 ,  #8308f1 ); /* For Firefox 3.6 to 15 */
+	  background: linear-gradient(to bottom right, #222, #333  ); /* Standard syntax */
+}
+
+
+body{
+	font-family: 'Amatic SC', cursive;
+	font-size: 30px;
+	font-weight: 400; 
+
+}
+
+/*navbar*/
+.navbar-default{
+	border: 0px;
+	background: transparent;
+}
+
+.navbar-toggle{
+	border: 0px;
+}
+
+.bg-navbar{
+	background: #333;
+	opacity: 0.9;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #079595;
+}
+
+.navbar-default .navbar-toggle .button:hover {
+  background-color: #eee;
+}
+
+.navbar-header{
+	border: 0px;
+}
+
+.collapse .nav li a{
+	color: white;
+}
+
+.collapse .nav li a:hover,
+.collapse .nav li a:focus{
+	color: #079595;
+	outline: 0;
+}
+
+#topnavbar{
+	border: 0px;
+}
+
+.navbar-default .navbar-header button{
+	background-color: #222;
+	margin-right: 20px;
+}
+
+.navbar-default .navbar-header button:hover,
+.navbar-default .navbar-header button:focus{
+	background-color: black;
+}
+	
+.galeria{
+	padding-bottom: 12px;
+}
+
+.panel-title{
+	font-size: 50px;
+}
+
+.soundcloud .panel-heading{
+	background-color: #29aac3;
+	color: #fff;
+}
+.soundcloud .panel{
+	border-color: #29aac3;
+}	
+.youtube .panel-heading{
+	background-color: #29aac3;
+	color: #fff;
+}	
+.youtube .panel {
+	border-color: #29aac3;
+}
+.insta .panel-heading{
+	background-color: #29aac3;
+	color: white; 
+}
+.insta .panel{
+	border-color: #29aac3;
+}	
+.galeria .panel-heading{
+	background-color: #045d5d;
+	color: #eee;
+}
+.galeria .panel{
+	border-color: #045d5d;
+	border: 0px;
+}
+.agenda .panel-heading{
+	background-color: #034b4b;
+	color: #eee;
+}
+.agenda .panel{
+	border-color: #034b4b;
+}
+.contato .panel-heading{
+	background-color: #333;
+	color: #eee;
+}
+.contato .panel{
+	border: 0;
+}	
+
+
+/*media*/
+
+/*less space between logo and content*/
+@media (max-width: 768px) {
+  .logo {
+    padding-bottom: 0px;
+  }
+}
+
+
