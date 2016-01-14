@@ -28,3 +28,16 @@ $('.nav a').on('click', function(){
     $('.navbar-default').removeClass('bg-navbar');
 });
 
+$(function(){
+	
+	$.ajax({
+	  type: 'GET',
+	  url: 'http://gateway.marvel.com:80/v1/public/stories?comics=25&apikey=5005d198aef54a39e7f85e63d6cfe7e8',
+	  success: function(data) {
+	    $.each(data, function(i, data) {
+	    	$('#orders').append('<li>name: ' + data.id +', drink:' + data.title + '... ' + data.description +  '</li>');
+			});
+		}
+	});
+
+});
