@@ -65,7 +65,7 @@ $(function(){
 
 				$.each(containerCharacters, function(i, containerCharacters){
 				temp.push(containerCharacters);//title
-				console.log(temp.name);
+				console.log(temp);
 				});
 	  		  
 	  		  }//success closes
