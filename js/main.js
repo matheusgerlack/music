@@ -56,7 +56,7 @@ $(function(){
     	  		
 	  		  type: 'GET',
 	  		  url: charactersObj.collectionURI,
-	  		  data: { 'apikey' :'5005d198aef54a39e7f85e63d6cfe7e' },
+	  		  data: { 'apikey' :'5005d198aef54a39e7f85e63d6cfe7e8' },
 	  		  success: function(data) {
 	  		  	containerCharacters = data.data.results;
 
