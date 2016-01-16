@@ -44,7 +44,7 @@ $(function(){
 		console.log(containerStories.title);//title
 		console.log(containerStories.description);//description
 
-		charactersObj = containerStories.charactersObj;
+		charactersObj = containerStories.characters;
 		console.log(charactersObj);//chars obj
 		});
 
