@@ -39,7 +39,7 @@ $(function(){
 	  container = data.data.results;
 		
 	    $.each(container, function(i, container){
-	    console.log(container);
+	    console.log(container.description);
 	    });
 
 	  }//success closes
