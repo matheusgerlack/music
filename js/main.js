@@ -61,11 +61,15 @@ $(function(){
 	  		  	containerCharacters = data.data.results;
 				console.log(containerCharacters);//array of chars obj
 
-				var temp = [];
-
 				$.each(containerCharacters, function(i, containerCharacters){
-				console.log(containerCharacters.name);
+				console.log(containerCharacters.name);//NAME of chars
+				console.log(containerCharacters.thumbnail);//Thumbnail Object
+					thumbs.push(containerCharacters.thumbnail);
 				});
+
+					$.each(thumbs, function(i, thumbs){
+					console.log(thumbs.url);//thumb url
+					});
 	  		  
 	  		  }//success closes
 	  		  
