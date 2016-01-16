@@ -31,25 +31,47 @@ $('.nav a').on('click', function(){
 
 
 $(function(){
-	var container = [];
-	characters = [];
+	var containerStories = [];
+	var charactersObj = [];
+	var containerCharacters = [];
 	$.ajax({
 	  type: 'GET',
 	  url: 'http://gateway.marvel.com:80/v1/public/stories/838?apikey=5005d198aef54a39e7f85e63d6cfe7e8',
 	  success: function(data) {
-	  	container = data.data.results;
+	  	containerStories = data.data.results;
 
-		$.each(container, function(i, container){
-		console.log(container.title);
-		console.log(container.description);
+		$.each(containerStories, function(i, containerStories){
+		console.log(containerStories.title);//title
+		console.log(containerStories.description);//description
 
-		characters = container.characters;
-		console.log(characters);	
-		console.log(characters.collectionURI);
+		charactersObj = containerStories.charactersObj;
+		console.log(charactersObj);//chars obj
 		});
+
+		//>>>Char API call start
+
+			$.ajax({
+			  type: 'GET',
+			  url: charactersObj.collectionURI,
+			  success: function(data) {
+			  	containerCharacters = data.data.results;
+
+				$.each(containerCharacters, function(i, containerCharacters){
+				console.log(containerCharacters.name);//log name
+				});
+
+			  //success closes
+			  }
+			  // do not touch - ajax and function closes
+		    });
+		
+
+		//>>>char api ends
+
 	  //success closes
 	  }
 	  // do not touch - ajax and function closes
     });
-});	
+//function closes
+});		
 
