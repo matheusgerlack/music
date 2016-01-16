@@ -64,8 +64,7 @@ $(function(){
 				var temp = [];
 
 				$.each(containerCharacters, function(i, containerCharacters){
-				temp.push(containerCharacters[i]);//title
-				console.log(temp[i]);
+				console.log(containerCharacters[i].name);
 				});
 	  		  
 	  		  }//success closes
