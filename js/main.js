@@ -64,7 +64,7 @@ $(function(){
 				var temp = [];
 
 				$.each(containerCharacters, function(i, containerCharacters){
-				console.log(containerCharacters[i].name);
+				console.log(containerCharacters.name);
 				});
 	  		  
 	  		  }//success closes
