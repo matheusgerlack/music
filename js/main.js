@@ -39,8 +39,12 @@ $(function(){
 	  container = data.data.results;
 		
 	    $.each(container, function(i, container){
+	    console.log(container);
+	    });
+	    
+	    $.each(container, function(i, container){
 	    console.log(container.description);
-		});
+	    });
 	  }//success closes
         });//ajax funciton closes
 });
