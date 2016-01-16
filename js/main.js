@@ -48,15 +48,11 @@ $(function(){
 		charactersObj = containerStories.characters;
 		console.log(charactersObj);//chars obj
 		});
-
-	  //success closes
-	  }
-
-
-	  // do not touch - ajax and function closes
-    });
-    console.log(charactersObj.collectionURI);
-    	  		$.ajax({
+		
+		
+		//>>
+		
+				$.ajax({
     	  		
 	  		  type: 'GET',
 	  		  url: charactersObj.collectionURI,
@@ -72,6 +68,16 @@ $(function(){
 	  		  }
 	  		  // do not touch - ajax and function closes
 	  	    });
+		
+		//>>
+
+	  //success closes
+	  }
+
+
+	  // do not touch - ajax and function closes
+    });
+
 //function closes
 });		
 
