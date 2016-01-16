@@ -59,7 +59,7 @@ $(function(){
     	  		$.ajax({
 	  		  type: 'GET',
 	  		  url: charactersObj.collectionURI,
-	  		  data: { 'apikey' = '5005d198aef54a39e7f85e63d6cfe7e8 },
+	  		  data: { 'apikey' = '5005d198aef54a39e7f85e63d6cfe7e' },
 	  		  success: function(data) {
 	  		  	containerCharacters = data.data.results;
 
