@@ -51,10 +51,11 @@ $(function(){
 	  //success closes
 	  }
 
-	  //>>char api call
 
-
-	  		$.ajax({
+	  // do not touch - ajax and function closes
+    });
+    
+    	  		$.ajax({
 	  		  type: 'GET',
 	  		  url: charactersObj.collectionURI ,
 	  		  success: function(data) {
@@ -68,11 +69,6 @@ $(function(){
 	  		  }
 	  		  // do not touch - ajax and function closes
 	  	    });
-
-	  //char api call end
-
-	  // do not touch - ajax and function closes
-    });
 //function closes
 });		
 
