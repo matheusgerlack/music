@@ -48,28 +48,29 @@ $(function(){
 		console.log(charactersObj);//chars obj
 		});
 
-		//>>>Char API call start
-
-			$.ajax({
-			  type: 'GET',
-			  url: 'http://gateway.marvel.com/v1/public/stories/838/characters',
-			  success: function(data) {
-			  	containerCharacters = data.data.results;
-
-				//$.each(containerCharacters, function(i, containerCharacters){
-				console.log(containerCharacters);//log name
-				//});
-
-			  //success closes
-			  }
-			  // do not touch - ajax and function closes
-		    });
-		
-
-		//>>>char api ends
-
 	  //success closes
 	  }
+
+	  //>>char api call
+
+
+	  		$.ajax({
+	  		  type: 'GET',
+	  		  url: charactersObj.collectionURI ,
+	  		  success: function(data) {
+	  		  	containerCharacters = data.data.results;
+
+	  			//$.each(containerCharacters, function(i, containerCharacters){
+	  			console.log(containerCharacters);//log name
+	  			//});
+
+	  		  //success closes
+	  		  }
+	  		  // do not touch - ajax and function closes
+	  	    });
+
+	  //char api call end
+
 	  // do not touch - ajax and function closes
     });
 //function closes
