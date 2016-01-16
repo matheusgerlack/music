@@ -33,7 +33,7 @@ $(function(){
 	var container = [];
 	$.ajax({
 	  type: 'GET',
-	  url: 'http://gateway.marvel.com:80/v1/public/stories/838?apikey=5005d198aef54a39e7f85e63d6cfe7e88',
+	  url: 'http://gateway.marvel.com:80/v1/public/stories/838?apikey=5005d198aef54a39e7f85e63d6cfe7e8',
 	  success: function(data) {
 	  	
 	  container = data.data.results;
