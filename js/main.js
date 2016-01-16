@@ -52,7 +52,7 @@ $(function(){
 
 			$.ajax({
 			  type: 'GET',
-			  url: charactersObj.collectionURI,
+			  url: 'http://gateway.marvel.com/v1/public/stories/838/characters',
 			  success: function(data) {
 			  	containerCharacters = data.data.results;
 
