@@ -52,32 +52,34 @@ $(function(){
 		
 		//>>
 		
-				$.ajax({
+			 $.ajax({
     	  		
 	  		  type: 'GET',
 	  		  url: charactersObj.collectionURI,
 	  		  data: { 'apikey' :'5005d198aef54a39e7f85e63d6cfe7e8' },
 	  		  success: function(data) {
 	  		  	containerCharacters = data.data.results;
+				console.log(containerCharacters);//array of chars obj
 
-	  			//$.each(containerCharacters, function(i, containerCharacters){
-	  			console.log(containerCharacters);//log name
-	  			//});
+				var temp = [];
 
-	  		  //success closes
-	  		  }
-	  		  // do not touch - ajax and function closes
-	  	    });
+				$.each(containerCharacters, function(i, containerCharacters){
+				temp.push(containerCharacters);//title
+				console.log(temp.name);
+				});
+	  		  
+	  		  }//success closes
+	  		  
+	  	    });// do not touch - ajax and function closes
 		
-		//>>
-
-	  //success closes
-	  }
+		//>>end of API call
+	  
+	  }//success closes
 
 
 	  // do not touch - ajax and function closes
     });
 
 //function closes
-});		
+});			
 
