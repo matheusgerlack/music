@@ -56,9 +56,9 @@ $(function(){
 			  success: function(data) {
 			  	containerCharacters = data.data.results;
 
-				$.each(containerCharacters, function(i, containerCharacters){
-				console.log(containerCharacters.name);//log name
-				});
+				//$.each(containerCharacters, function(i, containerCharacters){
+				console.log(containerCharacters);//log name
+				//});
 
 			  //success closes
 			  }
