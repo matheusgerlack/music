@@ -29,20 +29,26 @@ $('.nav a').on('click', function(){
 });
 
 
+
 $(function(){
 	var container = [];
+	characters = [];
 	$.ajax({
 	  type: 'GET',
 	  url: 'http://gateway.marvel.com:80/v1/public/stories/838?apikey=5005d198aef54a39e7f85e63d6cfe7e8',
 	  success: function(data) {
-	  	
-	  container = data.data.results;
-		
-	    $.each(container, function(i, container){
-	    console.log(container.description);
-	    });
+	  	container = data.data.results;
 
-	  }//success closes
-        });//ajax funciton closes
-});
+		$.each(container, function(i, container){
+		console.log(container.title);
+		console.log(container.description);
+
+		characters = container.characters;
+		console.log(characters);	
+		});
+	  //success closes
+	  }
+	  // do not touch - ajax and function closes
+    });
+});	
 
