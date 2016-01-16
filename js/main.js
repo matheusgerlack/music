@@ -58,7 +58,7 @@ $(function(){
     
     	  		$.ajax({
 	  		  type: 'GET',
-	  		  url: charactersobj.collectionURI + '?apikey=' + apikey,
+	  		  url: charactersObj.collectionURI + '?apikey=' + apikey,
 	  		  success: function(data) {
 	  		  	containerCharacters = data.data.results;
 
