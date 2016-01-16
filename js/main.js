@@ -67,7 +67,7 @@ $(function(){
 				console.log(containerCharacters.thumbnail);//Thumbnail Object
 					thumbs.push(containerCharacters.thumbnail);
 				});
-
+					console.log(thumbs);
 					$.each(thumbs, function(i, thumbs){
 					console.log(thumbs.url);//thumb url
 					});
