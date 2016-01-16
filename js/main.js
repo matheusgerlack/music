@@ -55,8 +55,9 @@ $(function(){
 
 	  // do not touch - ajax and function closes
     });
-    
+    console.log(charactersObj.collectionURI);
     	  		$.ajax({
+    	  		
 	  		  type: 'GET',
 	  		  url: charactersObj.collectionURI,
 	  		  data: { 'apikey' :'5005d198aef54a39e7f85e63d6cfe7e' },
