@@ -64,7 +64,7 @@ $(function(){
 				var temp = [];
 
 				$.each(containerCharacters, function(i, containerCharacters){
-				temp.push(containerCharacters);//title
+				temp.push(containerCharacters[i]);//title
 				console.log(temp);
 				});
 	  		  
