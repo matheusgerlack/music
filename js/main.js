@@ -34,6 +34,7 @@ $(function(){
 	var containerStories = [];
 	var charactersObj = [];
 	var containerCharacters = [];
+	apikey = '5005d198aef54a39e7f85e63d6cfe7e8';
 	$.ajax({
 	  type: 'GET',
 	  url: 'http://gateway.marvel.com:80/v1/public/stories/838?apikey=5005d198aef54a39e7f85e63d6cfe7e8',
@@ -57,7 +58,7 @@ $(function(){
     
     	  		$.ajax({
 	  		  type: 'GET',
-	  		  url: charactersObj.collectionURI ,
+	  		  url: charactersobj.collectionURI + '?apikey=' + apikey,
 	  		  success: function(data) {
 	  		  	containerCharacters = data.data.results;
 
