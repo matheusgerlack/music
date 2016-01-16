@@ -33,7 +33,7 @@ $(function(){
 	var container = [];
 	$.ajax({
 	  type: 'GET',
-	  url: 'http://gateway.marvel.com:80/v1/public/stories?comics=25&apikey=5005d198aef54a39e7f85e63d6cfe7e8',
+	  url: 'http://gateway.marvel.com:80/v1/public/stories/1009610/characters?apikey=5005d198aef54a39e7f85e63d6cfe7e8',
 	  success: function(data) {
 	  	
 	  container = data.data.results;
@@ -41,10 +41,7 @@ $(function(){
 	    $.each(container, function(i, container){
 	    console.log(container);
 	    });
-	    
-	    $.each(container, function(i, container){
-	    console.log(container.description);
-	    });
+
 	  }//success closes
         });//ajax funciton closes
 });
