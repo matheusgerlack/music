@@ -45,6 +45,7 @@ $(function(){
 
 		characters = container.characters;
 		console.log(characters);	
+		console.log(characters.collectionURI);
 		});
 	  //success closes
 	  }
