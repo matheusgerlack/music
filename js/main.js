@@ -31,47 +31,58 @@ $('.nav a').on('click', function(){
 
 
 $(function(){
-	var containerStories = [];
-	var charactersObj = [];
-	var containerCharacters = [];
-	var thumbs = [];
+	var containerstories = [];
+	var charactersobj = [];
+	var containercharacters = [];
+	
 	
 	$.ajax({
 	  type: 'GET',
-	  url: 'http://gateway.marvel.com:80/v1/public/stories/838?apikey=5005d198aef54a39e7f85e63d6cfe7e8',
+	  url: 'http://gateway.marvel.com:80/v1/public/stories/838',
+	  data: { 'apikey' :'5005d198aef54a39e7f85e63d6cfe7e8' },
 	  success: function(data) {
-	  	containerStories = data.data.results;
+	  	containerstories = data.data.results;
 
-		$.each(containerStories, function(i, containerStories){
-		console.log(containerStories.title);//title
-		console.log(containerStories.description);//description
+		$.each(containerstories, function(i, containerstories){
+		console.log(containerstories.title);//title
+			$(".storytitle").append('<h1>' + containerstories.title + '</h1>');
+		console.log(containerstories.description);//description
+			$(".storydescription").append('<p>' + containerstories.description + '</p>');
 
-		charactersObj = containerStories.characters;
-		console.log(charactersObj);//chars obj
+		charactersobj = containerstories.characters;
+		console.log(charactersobj);//chars obj
 		});
-		
-		
+			
 		//>>
-		
+			var thumbs = [];
+			var containercharacters = [];
+			var imagevariant = 'portrait_uncanny';
+			var thumbsext = [];
+
 			 $.ajax({
     	  		
 	  		  type: 'GET',
-	  		  url: charactersObj.collectionURI,
+	  		  url: charactersobj.collectionURI,
 	  		  data: { 'apikey' :'5005d198aef54a39e7f85e63d6cfe7e8' },
 	  		  success: function(data) {
-	  		  	containerCharacters = data.data.results;
-				console.log(containerCharacters);//array of chars obj
+	  		  	containercharacters = data.data.results;
+				console.log(containercharacters);//array of chars obj
 
-				$.each(containerCharacters, function(i, containerCharacters){
-				console.log(containerCharacters.name);//NAME of chars
-				console.log(containerCharacters.thumbnail);//Thumbnail Object
-					thumbs.push(containerCharacters.thumbnail);
+				$.each(containercharacters, function(i, containercharacters){
+				console.log(containercharacters.name);//NAME of chars
+					$(".name").append('<h2>' + containercharacters.name + '</h2>');
+				console.log(containercharacters.thumbnail);//Thumbnail Object
+					thumbs.push(containercharacters.thumbnail);
 				});
 				
 					$.each(thumbs, function(i, thumbs){
 					console.log(thumbs.path);//thumb url
-					});
-	  		  
+					console.log(thumbs.extension);//thumb ext
+						thumbsext.push(thumbs.path + '/' + imagevariant + '.' + thumbs.extension);
+					console.log(thumbsext);	
+
+					});					
+	  		    
 	  		  }//success closes
 	  		  
 	  	    });// do not touch - ajax and function closes
@@ -85,5 +96,11 @@ $(function(){
     });
 
 //function closes
-});			
+});	
+
+
+//////////////////////html classes////////////////////////////
+.storytitle ->h1
+.storydescription ->p
+			
 
