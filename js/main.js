@@ -97,10 +97,5 @@ $(function(){
 
 //function closes
 });	
-
-
-//////////////////////html classes////////////////////////////
-.storytitle ->h1
-.storydescription ->p
 			
 
