@@ -7,7 +7,7 @@
 html{
 	width: 100%;
 	height: 100%;
-	background-color: #222;
+	/*background-color: #222;
 		background: repeating-linear-gradient(
 	  -45deg,
 	  #333,
@@ -15,75 +15,47 @@ html{
 	  #555 1px, 
 	  #555 11px
 
-	);
+	);*/
 /*#222 lugar de #eee/#333 instead of orange*/
 }
 
-.row{
-	background-color: #222;
-		background: repeating-linear-gradient(
-	  -45deg,
-	  #333,
-	  #333 10px,
-	  #555 1px, 
-	  #555 11px
-
-	);
+body{
+	background: url("../img/bg-wooden2.jpg");
+	background-repeat: repeat;
+	margin-left: 10px;
+	margin-right: 10px;
 }
+
 
 /*logo section*/
 
-.logo h1{
-	padding-top: 10px;
-	padding-bottom:90px;
-	left: 20px;
-	font-family: ocean;
-	font-size: 170px;
-	color: #29aac3;
-	/*text-shadow: 2px 2px 2px grey;*/
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
-.logo p{
-	font-family: ocean;
-	font-size: 80px;
-	position: absolute;
-	top: 140px;
-	left: 20%;
+.logo h1{
+	padding-top: 10px;
+	padding-bottom:10px;
+	left: 20px;
+	font-family: 'Poiret One', cursive;
+	font-size: 7em;
 	color: #eee;
+	text-shadow:4px 2px 2px #222;
+	border: 12px solid transparent;
+	border-image: url('../img/bg-flower1.jpg') 30 round;
+	background-color: rgba(85, 85, 85, 0.4);
+	animation:fadein 3s;
 }
 
 .logo-all{
-	border-bottom: 5px solid #eee;
-	padding-bottom: 35px;
-	margin-bottom: -40px; 
-	  background: -webkit-linear-gradient(left top, #222, #333 ); /* For Safari 5.1 to 6.0 */
-	  background: -o-linear-gradient(bottom right, #222, #333 ); /* For Opera 11.1 to 12.0 */
-	  background: -moz-linear-gradient(bottom right, #222, #333 ); /* For Firefox 3.6 to 15 */
-	  background: linear-gradient(to bottom right, #222, #333  ); /* Standard syntax */
-	  z-index: -1;
-}
-
-.img-circle{
-	position: relative;
-	left: 15%;
-	height: 180px;
-	width: 180px;
-	z-index: 0;
-	top: 60px;
+	padding-bottom: 35px; 
+	 
 }
 
 /*icons*/
 
-.icon-wave-sea{
-	top: 220px;
-	position: absolute;
-	left: 50%;
-	color: #29aac3;
-}
 
-.panel-title i{
-	font-size: 40px;
-}
 
 .icon-chevron-down{
 	position: absolute;
@@ -97,26 +69,53 @@ html{
 }
 
 body{
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Poiret One', cursive;
 	font-size: 30px;
 	font-weight: 400; 
-
 }
 
 /*navbar*/	
+.navxs .fa{
+	font-size: 1em;
+	color: #eee; 
+	padding: 20px;
+	text-shadow:1px 1px #333;
+}
+.navxs{
+	margin-left: auto;
+	margin-right: auto;
+	background-color: transparent;
+}
+
+.navxg .fa{
+	color: #777; 
+	padding: 10px;
+}
+
 .navxg{
-	position: absolute;
-	right: 2%;
+	margin-left: auto;
+	margin-right: auto;
 	color: #eee;
+	background-color: #eee;
+	width: 100%;
 }
 
 .navxg a{
-	color: #eee;
+	color: #777;
+	font-size: 22px;
+	transition: all 0.6s;
 }
 
-.navxg a:visited{
+.navxg a:visited,
+.navxg a:active {
 	text-decoration: none;
-	color: #eee;
+	color: #333;
+}
+
+.navxg a:hover{
+	color: #6699ff;
+	text-decoration: none;
+	
 }
 
 .navbar-default{
@@ -151,7 +150,7 @@ body{
 
 .collapse .nav li a:hover,
 .collapse .nav li a:focus{
-	color: #29aac3;
+	color: #6699ff;
 	outline: 0;
 }
 
@@ -166,64 +165,63 @@ body{
 
 .navbar-default .navbar-header button:hover,
 .navbar-default .navbar-header button:focus{
-	background-color: black;
-}
-	
-.galeria{
-	padding-bottom: 12px;
+	background-color: #6699ff;
 }
 
+/*panels*/
+
+hr{
+	border-top: 5px solid #777;
+	width: 3em;
+
+}
+	
 .panel-title{
 	font-size: 50px;
 }
 
-.soundcloud .panel-heading{
-	background-color: #29aac3;
-	color: #fff;
+.panel{
+	background-color: rgba(34, 34, 34, 0.6);
+	color: #eee; 
+	border: none;
+	border-radius: 2px;
 }
-.soundcloud .panel{
-	border-color: #29aac3;
-}	
-.youtube .panel-heading{
-	background-color: #777;
-	color: #fff;
-}	
-.youtube .panel {
-	border-color: #777;
-}
-.insta .panel-heading{
-	background-color: #29aac3;
-	color: white; 
-}
-.insta .panel{
-	border-color: #29aac3;
-}	
 
-.galeria .panel-body{
-	padding: 0;
-	padding-bottom: 15px;
+.panel-title-custom h1{
+	margin-top: 10px;
+	font-size: 50px;
 }
-.agenda .panel-heading{
-	background-color: #295dc3;
+
+/*release*/
+
+.release .panel-title-custom h1{
+	font-size: 50px;
+}
+
+
+.release .panel{
+	background: url("../img/6.JPG");
+	background-size: cover;
 	color: #eee;
 }
-.agenda .panel{
-	border-color: #295dc3;
+
+.panel-text{
+	font-size: 25px;
+	background-color: rgba(34, 34, 34, 0.9);
+	padding: 1em;
+	margin-top: 12em;
 }
-.contato .panel-heading{
-	background-color: #333;
-	color: #eee;
-}
-.contato .panel{
-	border: 0;
-}	
 
 /*carousel*/
 
+.galeria{
+	padding-bottom: 12px;
+}
+
 .carousel{
-        background: #eee;
+        background: transparent;
         position: relative;
-        padding: 10px;     /* Shows as a border around the carousel */
+        padding: 0px;     /* Shows as a border around the carousel */
 }
 
 .carousel-inner>.item>img {
@@ -239,20 +237,61 @@ body{
 
 /*disco*/
 
+.fa{
+	padding: 15px;
+	padding-top: 1em;
+	color: #eee;
+}
+
 .discografia img {
 	max-height: 300px;
 	margin-left: auto;
 	margin-right: auto;
   }
 
-/*button comprar*/
-.btn{
-	margin-top: 10px;
-	padding-top: 1px;
-	width: 100px;
-	height: 50px;
-	font-size: 33px;
+  .discografia h3{
+  	color: #eee;
+  	margin-top: 0;
+  }
+
+  .border-wrapper{
+  	border: 3px solid transparent;
+  	border-top: 0; 
+  	padding: 1em; 
+  	border-image: url('../img/bg-flower1.jpg') 10 repeat;
+  }
+
+
+.logo-bottom{
+	font-family: 'Poiret One', cursive;
+	color: #eee;
+	border: 8px solid transparent;
+	border-image: url('../img/bg-flower1.jpg') 30 round;
+	background-color: rgba(31, 31, 31, 0.5);
+	margin-bottom: 10px;
 }
+
+.logo-bottom h1{
+	font-size: 30px;
+	color: #22E338;
+	text-shadow:2px 2px 2px #222;
+}
+
+.logo-bottom p{
+	font-size: 19px;
+}
+
+.contato a{
+	color: #eee;
+	text-decoration: underline;
+}
+
+.contato a:hover{
+	color: #eee;
+	opacity: 0.8;
+	text-decoration: none;
+}
+
 
 
 /*MEDIA*/
@@ -260,12 +299,6 @@ body{
 /*logo section when XS*/
 
 @media (max-width: 990px) {
-  .perfil img{
-  	top: 20px;
-  	left: 30%;
-  	width: 120px;
-  	height: 120px;
-  }
 
   .logo i {
     left: 30%;
@@ -278,11 +311,16 @@ body{
   	padding-bottom: 0px;
   }
 
+  .logo-all{
+  	padding-bottom: 90px;
+  }
+
   .logo h1 {
-  	margin-top: -5px;
     text-align: center;
     top: 5%;
-    font-size: 90px;
+    font-size: 80px;
+    padding-bottom: 10px;
+
   }
 
   .logo p {
@@ -304,14 +342,88 @@ body{
 	margin-right: auto;
   }
 
-  .btn{
-	margin-top: 10px;
-	padding-top: 2px;
-	width: 100px;
-	height: 50px;
-	font-size: 30px;
-	}
+  .fa{
+	padding: 5px;
+	padding-top: 1em;
+	color: #eee;
+   }
+
    td{
 	font-size: 25px;
 	}
+
+	/*release*/
+	.release p{
+		font-size: 17px;
+	}
+
+	.release h1{
+		padding-bottom: 5px;
+	}
+
+	.panel-text{
+		margin-top: 2em;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	/*media agenda*/
+
+	td{
+		font-size: 20px;
+		text-shadow:2px 2px 2px #777; 
+	}
+}
+
+
+/*return to top*/
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(34, 34, 34, 0.6);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    font-size: 19px;
+    top :-5px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(34, 34, 34, 0.7);
+}
+#return-to-top:active {
+    background: rgba(34, 34, 34, 0.7);
+    outline: none;
+}
+
+#return-to-top:focus {
+    background: rgba(34, 34, 34, 0.7);
+    outline: none;
+}
+
+#return-to-top i:hover {
+    color: #fff;
+    top: -5px;
+    outline: none;
 }

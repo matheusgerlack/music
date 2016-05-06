@@ -5,15 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Matheus Gerlack Music</title>
+    <title>Music</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="css/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/whhg.css">
 
+    <!-- FONTS / ICONS -->
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,6 +27,8 @@
     <![endif]-->
   </head>
   <body>
+
+    <a class="hidden-xs" href="javascript:" id="return-to-top" ><i class="fa fa-chevron-up fa-2x"></i></a>
 
     <!-- navbar mobile -->
     <nav class="navbar navbar-default navbar-fixed-top visible-xs">
@@ -43,6 +49,7 @@
               <li class=""><a href="#soundcloud" class="scroll ">Music</a></li>
               <li class=""><a href="#youtube" class="scroll ">Video</a></li>
               <li class=""><a href="#insta" class="scroll ">Insta</a></li>
+              <li class=""><a href="#release" class="scroll ">Release</a></li>
               <li class=""><a href="#galeria" class="scroll ">Galeria</a></li>
               <li class=""><a href="#discografia" class="scroll ">Discografia</a></li>
               <li class=""><a href="#agenda" class="scroll ">Agenda</a></li>
@@ -52,45 +59,43 @@
       </div><!-- /.container-fluid -->
     </nav>  
     
-    <!-- logo -->
+    <!-- logo / navbar desktop-->
     <div class="container-fluid logo-all">
-      <div class="container perfil col-md-3">
-        <img class="img-responsive img-circle"  src="img/32.jpg">
-      </div> 
-      <div class="container logo col-md-9" id="logo" role="navigation">
-          <nav class="nav navxg hidden-xs">
-              <ul class="list-inline text-right">
-                <li><a href="#galeria" class="scroll">Galeria ></a></li>
-                <li><a href="#agenda" class="scroll">Agenda ></a></li>
-                <li><a href="#contato" class="scroll">Contato ></a></li>
+      <div class="container logo" id="logo" role="navigation">
+          <nav class="nav navxg hidden-xs text-center">
+              <ul class="list-inline">
+                <li class=""><a href="#soundcloud" class="scroll ">Music</a><span style="color:#999;">&nbsp|</span></li>
+                <li class=""><a href="#youtube" class="scroll ">Video</a> <span style="color:#999;">&nbsp|</span> </li>
+                <li class=""><a href="#insta" class="scroll ">Insta</a> <span style="color:#999;"> &nbsp|</span> </li>
+                <li class=""><a href="#release" class="scroll ">Release</a><span style="color:#999;"> &nbsp|</span> </li>
+                <li class=""><a href="#galeria" class="scroll ">Galeria</a><span style="color:#999;"> &nbsp|</span> </li>
+                <li class=""><a href="#discografia" class="scroll ">Discografia</a><span style="color:#999;"> &nbsp|</span></li>
+                <li class=""><a href="#agenda" class="scroll ">Agenda</a><span style="color:#999;"> &nbsp|</span></li>
+                <li class=""><a href="#contato" class="scroll ">Contato</a><span style="color:#999;"> &nbsp|</span></li>
+                <li><a href="http://goo.gl/5kJryW"><i class="fa fa-spotify"></i></a></li>
+                <li><a href="https://itun.es/br/_2UC9"><i class="fa fa-apple"></i></a></li>
+                <li><a href="https://goo.gl/433afr"><i class="fa fa-youtube"></i></a></li>
               </ul>
           </nav> 
-         <h1>Matheus Gerlack</h1>
-          <!-- <i class="icon-wave-sea"></i> -->
-          <p>~ Music ~</p>   
+         <h1 class='text-center'>Musician Profile</h1>
       </div>
-      <!--<a class="scroll" href="#soundcloud"><i class="icon-chevron-down text-right visible-xs" aria-hidden="true"></i></a> -->
-    </div>    
-
-    <!-- soundcloud -->
-    <div class="container soundcloud col-md-3 col-xs-12 text-center" id="soundcloud">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title"><i class="icon-headphonesthree"></i> Music</h3>
-        </div>
-        <div class="panel-body tex-center">
-          <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/142604516&amp;color=29aac3&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-        </div>
-      </div>
-    </div>
+    </div>  
+    <nav class="nav navxs visible-xs">
+        <ul class="list-inline text-center">
+          <li><a href="http://goo.gl/5kJryW"><i class="fa fa-spotify"></i></a></li>
+          <li><a href="https://itun.es/br/_2UC9"><i class="fa fa-apple"></i></a></li>
+          <li><a href="https://goo.gl/433afr"><i class="fa fa-youtube"></i></a></li>
+        </ul>
+    </nav>   
 
     <!-- youtube -->
-    <div class="container youtube col-md-6 col-xs-12 text-center" id="youtube">  
+    <div class="container youtube col-md-offset-1 col-md-6 col-xs-12 text-center" id="youtube">  
       <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title"><i class="icon-hdtv"></i> Tv</h3>
-        </div>
         <div class="panel-body">
+          <div class="panel-title-custom">
+            <h1>Video</h1>
+            <hr>
+          </div>
           <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/BSDm-AwIOzQ" frameborder="0" allowfullscreen></iframe>
           </div>
@@ -98,14 +103,48 @@
       </div>
     </div>
 
-    <!-- insta -->
-    <div class="container insta col-md-3 col-xs-12 text-center" id="insta">
+    <!-- soundcloud -->
+    <div class="container soundcloud col-md-4 col-xs-12 text-center" id="soundcloud">
       <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title"><i class="icon-instagram"></i> Insta</h3>
+        <div class="panel-body text-center">
+          <div class="panel-title-custom">
+            <h1>Music</h1>
+            <hr>
+          </div>
+          <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/142604516&amp;color=29aac3&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
         </div>
+      </div>
+    </div>
+
+    <!-- insta -->
+    <div class="container insta col-md-offset-3 col-md-6 col-xs-12 text-center" id="insta">
+      <div class="panel panel-default">
         <div class="panel-body">
+          <div class="panel-title-custom">
+            <h1>Insta</h1>
+            <hr>
+          </div>
           <script src="//instansive.com/widget/js/instansive.js"></script><iframe src="//instansive.com/widgets/699c9b8aa6ff30bba55c19edfd1a5d68cb713193.html" id="instansive_699c9b8aa6" name="instansive_699c9b8aa6"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+        </div>
+      </div>
+    </div>
+
+     <!-- release -->
+    <div class="container release col-md-offset-2 col-md-8 col-xs-12 text-center" id="release">
+      <div class="panel panel-default">                  
+        <div class="panel-body">
+          <div class="panel-title-custom">
+            <h1>Release</h1>
+            <hr>
+          </div>
+          <div class="panel-text">
+            <p>Lorem ipsum dolor sit amet, justo omnium sit an, at eius indoctum vix. Duo soleat sanctus admodum ei, an harum qualisque mel. Id vix paulo soleat, scripserit dissentiunt ad per. Usu at iriure molestiae.
+
+            Quo an regione diceret, nostro disputando complectitur in nam, aperiri eripuit appetere eam ne. Ut vix viderer necessitatibus, omnis regione tacimates ei pro. Quo at quidam volumus, vix ea saperet qualisque. No his offendit accommodare, cum euismod apeirian te, pro no eius luptatum. Facilisis inciderint at vis, commodo dolorem explicari an per, iisque recteque pertinacia sit ei.
+
+            Quo an regione diceret, nostro disputando complectitur in nam, aperiri eripuit appetere eam ne. Ut vix viderer necessitatibus, omnis regione tacimates ei pro. Quo at quidam volumus, vix ea saperet qualisque. No his offendit accommodare, cum euismod apeirian te, pro no eius luptatum. Facilisis inciderint at vis, commodo dolorem explicari an per, iisque recteque pertinacia sit ei. 
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -113,10 +152,11 @@
     <!-- galeria-->
     <div class="container galeria col-md-8 col-xs-12 text-center" id="galeria">
       <div class="panel panel-default ">
-        <div class="panel-heading">
-          <h3 class="panel-title"><i class="icon-images-gallery"></i> Galeria</h3>
-        </div>
         <div class="panel-body">
+          <div class="panel-title-custom">
+            <h1>Galeria</h1>
+            <hr>
+          </div>
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -140,7 +180,7 @@
               </div>
               <!-- imagem 2 -->
               <div class="item">
-                <img src="img/2.JPG" alt="...">
+                <img src="img/2.jpg" alt="...">
                 <div class="carousel-caption">
                 </div>
               </div>
@@ -152,19 +192,19 @@
               </div>
               <!-- imagem 4 -->
               <div class="item">
-                <img src="img/4.JPG" alt="...">
+                <img src="img/4.jpg" alt="...">
                 <div class="carousel-caption">
                 </div>
               </div>
               <!-- imagem 5 -->
               <div class="item">
-                <img src="img/5.JPG" alt="...">
+                <img src="img/5.jpg" alt="...">
                 <div class="carousel-caption">
                 </div>
               </div>
               <!-- imagem 6 -->
               <div class="item">
-                <img src="img/6.JPG" alt="...">
+                <img src="img/6.jpg" alt="...">
                 <div class="carousel-caption">
                 </div>
               </div>
@@ -200,79 +240,53 @@
     <!-- discografia-->
     <div class="container discografia col-md-4 col-xs-12 text-center" id="discografia">
       <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title"><i class="icon-gramophone"></i> Discografia</h3>
-        </div>
         <div class="panel-body">
-          <h1>Banho de Mar (2015)</h1>
-          <img class="img-responsive" src="img/savoy-cover.png">
-          <a class="btn btn-success" href="https://www.facebook.com/BandaSavoy/app/206803572685797/" role="button">COMPRAR</a>  
+          <div class="panel-title-custom">
+            <h1>Discografia</h1>
+            <hr>
+          </div>
+          <div class="border-wrapper">
+            <h3>BANHO DE MAR (2015)</h3>
+            <img class="img-responsive" src="img/savoy-cover.jpg">
+            <a href="http://goo.gl/5kJryW"><i class="fa fa-spotify fa-lg"></i></a>
+            <a href="https://itun.es/br/_2UC9"><i class="fa fa-apple fa-lg"></i></a>
+            <a href="https://goo.gl/433afr"><i class="fa fa-youtube fa-lg"></i></a>            
+          </div>  
         </div><!-- panel body close -->
       </div>    
     </div>
-   
+
     <!-- agenda -->
-    <div class="container agenda col-md-6 col-xs-12" id="agenda">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title text-center"><i class="icon-calendarthree"></i> Agenda</h3>
+       <div class="container agenda col-md-offset-1 col-md-10 col-xs-12" id="agenda">
+         <div class="panel panel-default">
+           <div class="panel-body">   
+             <div class="panel-title-custom text-center">
+               <h1>Agenda</h1>
+               <hr>
+             </div>  
+               <table class="table" id="agenda-data">
+               </table>
+            </div>
+          </div>
         </div>
-        <div class="panel-body">     
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>Data</th>
-                  <th>Hora</th>
-                  <th>Local</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>5/12 @sábado</td>
-                  <td>21:30</td>
-                  <td>Shark Sushi - Ipiranga / POA</td>
-                </tr>
-                <tr>
-                  <td>7/12 @segunda</td>
-                  <td>20:30</td>
-                  <td>Shark Sushi - Germânia / POA</td>
-                </tr>
-                <tr>
-                  <td>9/12 @quarta</td>
-                  <td>21:30</td>
-                  <td>Shark Sushi - Ipiranga / POA</td>
-                </tr>
-                 <tr>
-                  <td>13/12 @domingo</td>
-                  <td>21:30</td>
-                  <td>Shark Sushi - Ipiranga / POA</td>
-                </tr>
-                 <tr>
-                  <td>16/12 @quarta</td>
-                  <td>20:30</td>
-                  <td>Bendizê Acústico - Tristeza / POA</td>
-                </tr>
-                 <tr>
-                  <td>Jan/16 @a definir</td>
-                  <td>19:30</td>
-                  <td>Open Stage - Zona Sul / POA</td>
-                </tr>
-              </tbody>
-            </table>
+
+    <!-- contato -->
+    <div class="container contato col-md-offset-2 col-md-8 col-xs-12 text-center" id="contato">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="panel-title-custom">
+            <h1>Contato</h1>
+            <hr>
+          </div>
+          <a href="mailto:matheusfgk@gmail.com"> contact@domain.com</a>
         </div>
       </div>
     </div>
 
-    <!-- contato -->
-    <div class="container contato col-md-6 col-xs-12 text-center" id="contato">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title"><i class="icon-contact-businesscard"></i> Contato</h3>
-        </div>
-        <div class="panel-body">
-          <a href="mailto:matheusfgk@gmail.com"><i class="fa fa-envelope-square fa-2x"></i> matheusfgk@gmail.com</a>
-        </div>
-      </div>
+
+    <div class="container logo-bottom col-md-offset-4 col-md-4 col-xs-12 text-center">
+      <h1>Your <br> Name</h1>
+      <p>2016 - Todos direitos reservados.</p>
     </div>
  
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -280,5 +294,10 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script> 
+        $(function(){
+          $("#agenda-data").load("agenda.html"); 
+        });
+    </script>
   </body>
 </html>
